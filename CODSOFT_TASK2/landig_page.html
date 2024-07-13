@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("images.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }      
+      header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        header nav ul li {
+            margin-left: 20px;
+        }
+        
+        header nav ul li a {
+            color: #f0e9e9;
+            text-decoration: none;
+        }
+        
+        .banner {
+            background-image: url("hahah.jpg"); 
+            background-size: cover;
+            background-position: center;
+            color: #040404;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .places {
+            text-align: center;
+            margin-left: 25px;
+
+        }
+        .dropdown-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #f8f2f2;
+            border-radius: 4px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        label {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        
+        .services, .destinations, .footer {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .services h2, .destinations h2, .footer h2 {
+            margin-bottom: 20px;
+        }
+        
+        .service-items, .destination-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .service-item, .destination-item {
+            background-color: #f9f7f7;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #ede9e9;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+        
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Travel With Us</h1><br>
+            <p>And fullfill your dreams in budget</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+
+        <div class="container">
+            <h2>Explore the World with Us</h2>
+            <p>Your adventure starts here</p>
+            <img src="hahah.jpg" >
+        </div>
+    </section>
+    
+    
+    <!-- Places Section -->
+    <section class="places" id="places">
+        <div class="dropdown-container">
+            <div>
+                <label for="your-place">Your Place:</label>
+                <select name="your-place" id="your-place">
+                    <option value="Agra">Agra</option>
+                    <option value="Goa">Goa</option>
+                    <option value="New York">New York</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Pondicherry">Pondicherry</option>
+                    <option value="Shimla">Shimla</option>
+                </select>
+            </div>
+            <div>
+                <label for="destination-place">Destination Place:</label>
+                <select name="destination-place" id="destination-place">
+                    <option value="Agra">Agra</option>
+                    <option value="Goa">Goa</option>
+                    <option value="New York">New York</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Pondicherry">Pondicherry</option>
+                    <option value="Shimla">Shimla</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit">Take Me There</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Travel Planning</h3>
+                    <p>Customized travel itineraries and planning services.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Flight Booking</h3>
+                    <p>Best deals on flight tickets and hassle-free bookings.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Car Rentals</h3>
+                    <p>"Drive Your Adventure - Explore with Ease"</p>
+                </div>
+                <div class="service-item">
+                    <h3>Train Booking</h3>
+                    <p>"Seamless Journeys Await - Book Your Train Tickets Today!"".</p>
+                </div>
+                <div class="service-item">
+                    <h3>Holiday Packages</h3>
+                    <p>"Discover Your Dream Getaway - Explore Our Exclusive Holiday Packages!".</p>
+                </div>
+                <div class="service-item">
+                    <h3>Coperate events and tours</h3>
+                    <p>"Elevate Your Business Travel - Tailored Corporate Events and Tours".</p>
+                </div>
+                <div class="service-item">
+                    <h3>Destination Wedding</h3>
+                    <p>"Say 'I Do' in Paradise - Plan Your Dream Destination Wedding"</p>
+                </div>
+                <div class="service-item">
+                    <h3>Honeymoon Packages</h3>
+                    <p>"Begin Your Forever Adventure - Explore Our Luxurious Honeymoon Packages".</p>
+                </div>
+                <div class="service-item">
+                    <h3>Domestic and Internation Holiday Packages</h3>
+                    <p>"Explore the World, Near and Far - Unforgettable Domestic and International Holiday Packages".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination-items">
+                <div class="destination-item">
+                    <h3>Paris</h3>
+                    <p>The city of lights and romance.</p>
+                </div>
+                <div class="destination-item">
+                    <h3>Bali</h3>
+                    <p>Island of Gods with beautiful beaches.</p>
+                </div>
+                <div class="destination-item">
+                    <h3>New York</h3>
+                    <p>The city that never sleeps.</p>
+                </div>
+                <div class="destination-item">
+                    <h3>Dubai</h3>
+                    <p>"Discover Dubai's Extravaganza - Where Modern Marvels Meet Timeless Charm"</p>
+                </div>
+                <div class="destination-item">
+                    <h3>Bangkok</h3>
+                    <p>"Vibrant Bangkok Beckons - Where Tradition Meets Trend in Every Moment"</p>
+                </div>
+                <div class="destination-item">
+                    <h3>Singapore</h3>
+                    <p>"Where Urban Sophistication Meets Tropical Serenity"</p>
+                </div>
+                <div class="destination-item">
+                    <h3>Maldives</h3>
+                    <p>"Paradise Found: Serenity Awaits in the Maldives"</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: travelwithus@gmail.com</p>
+            <p>Phone:+91 9603009857</p>
+        </div>
+    </section>
+</body>
+</html>
